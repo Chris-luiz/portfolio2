@@ -2,7 +2,7 @@ import { FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const BottomNavigation = () => {
     return (
-        <ul className="shadow fixed bottom-4 left-1/2 transform -translate-x-1/2  border border-solid p-4 rounded-lg flex gap-10 text-gray-700 justify-center">
+        <ul className="shadow fixed bottom-4 right-4 border border-solid p-4 rounded-lg flex md:flex-col gap-10 text-gray-700 justify-center bg-white">
 
             <li className="hover:text-green-500 hover:fill-green-500">
                 <a target="_blank" href="https://wa.me/5592981226844" rel="noreferrer" className='flex flex-col items-center'>
