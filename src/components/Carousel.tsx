@@ -63,7 +63,7 @@ export const Carousel = () => {
 
     return (
         <section className="bg-white dark:bg-gray-900 m-20">
-            <div className="container px-6 py-10 mx-auto">
+            <div className="container px-6 mx-auto">
                 <div className="lg:-mx-6 lg:flex lg:items-center gap-5">
 
                     <Stepper selected={selected} onSelect={setSelected} />
@@ -105,7 +105,7 @@ export const Carousel = () => {
 
                         <h3 className="mt-6 text-lg font-medium text-blue-500">Tecnologias Utilizadas:</h3>
                         {experiencias[selected].tecnologiasUtilizadas.map(tecnologia => (
-                            <li className="text-gray-600 dark:text-gray-300">{tecnologia}</li>
+                            <li key={tecnologia} className="text-gray-600 dark:text-gray-300">{tecnologia}</li>
                         ))}
 
                     </div>

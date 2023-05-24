@@ -5,7 +5,7 @@ export const Footer = () => {
                 <div className="lg:flex lg:justify-between">
                     <div className="mt-6 lg:mt-0 lg:flex-1">
                         <h3 className="text-gray-700 uppercase dark:text-white">Contato</h3>
-                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div className="">
                             <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+55 (92) 98122-6844</span>
                             <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">chrisitan.luiz.de.sousa@gmail.com</span>
                             <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">linkedin.com/in/christian-luiz-dev/</span>
