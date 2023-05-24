@@ -3,16 +3,14 @@ import { useState } from 'react';
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="relative bg-white shadow dark:bg-gray-800">
+        <nav className="fixed w-full top-0 bg-white shadow dark:bg-gray-800">
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <a href="#sobre-mim">
-                        <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt="Foto de perfil" />
+                        <h1 className='text-2xl text-gray-700 transition-colors duration-300 transform dark:text-gray-200 md:mx-4 md:my-0'>Christian Luiz</h1>
                     </a>
 
                     <div className="flex lg:hidden">
@@ -35,11 +33,13 @@ export const Navbar = () => {
                         <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#sobre-mim">Sobre Mim</a>
                         <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#projetos">Projetos</a>
                         <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#experiencia">Experiencia</a>
-                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#formacao">Formacao</a>
+                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#conhecimentos">Conhecimentos</a>
                         <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#oque-estou-aprendendo">Oque estou aprendendo?</a>
                     </div>
                 </div>
             </div>
+
         </nav>
+
     );
 };
