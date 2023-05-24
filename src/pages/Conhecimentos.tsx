@@ -1,7 +1,7 @@
 export const Conhecimentos = () => {
     return (
-        <div>
+        <section id='conhecimentos'>
             
-        </div>
+        </section>
     );
 }
