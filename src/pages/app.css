@@ -1,0 +1,7 @@
+.linee:before,
+.linee:after {
+    content: "";
+    display: block;
+    border-top: 2px dotted #1e3a8a;
+    margin: .8em 0;
+}
