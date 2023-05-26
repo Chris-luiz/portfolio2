@@ -16,9 +16,9 @@ export const SobreMim = () => {
                     <div className='flex flex-col col-span-3'>
                         <div>
                             <h1 className='text-2xl text-blue-900'>Christian Luiz de Souza Paes</h1>
-                            <p className='text-1xl font-mono text-blue-900'>Desenvolvedor Front-End</p>
+                            <p className='text-1xl font-mono text-blue-900'>Desenvolvedor Front-End Jr.</p>
                             <br />
-                            <p className='font-light'>Sou um desenvolvedor Front-End apaixonado por transformar ideias em realidade, combinando habilidades técnicas e criatividade. Estou sempre em busca de novas oportunidades para aperfeiçoar minhas habilidades e trabalhar em projetos desafiadores. Meu objetivo é transformar, aprender e crescer na área. Curso <strong className='font-bold'>Sistemas de Informação</strong> pela Fametro.</p>
+                            <p className='font-light'>Tenho 21 anos e sou um desenvolvedor Front-End apaixonado por transformar ideias em realidade. Atualmente minha principal stack se concentra no ecossistema JS, com Node, TypeScript e suas bibliotecas mais famosas (Yup, Axios, React, etc). Curso <strong className='font-bold'>Sistemas de Informação</strong> pela Fametro.</p>
                         </div>
                         <div className='border-t-2 my-5'></div>
                         <div className='flex gap-10 justify-around '>
