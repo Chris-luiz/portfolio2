@@ -62,7 +62,10 @@ export const Carousel = () => {
     };
 
     return (
-        <section className="bg-white dark:bg-gray-900 m-20">
+        <div className="bg-white dark:bg-gray-900 m-20">
+            <h1 className="text-center text-3xl font-mono text-blue-900 ">Experiências</h1>
+            <p className="text-center text-2xl text-blue-400 mb-4">Onde realizei projetos, tanto contratado como estágio</p>
+
             <div className="container px-6 mx-auto">
                 <div className="lg:-mx-6 lg:flex lg:items-center gap-5">
 
@@ -87,7 +90,7 @@ export const Carousel = () => {
                     </div>
 
                     <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
-                        
+
                         <p className="text-2xl font-semibold text-blue-500 lg:w-96">{experiencias[selected].nomeEmpresa}</p>
 
                         <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
@@ -111,6 +114,6 @@ export const Carousel = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
