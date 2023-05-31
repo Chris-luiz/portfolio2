@@ -5,7 +5,7 @@ import { CONHECIMENTOS } from "../constants";
 export const Conhecimentos = () => {
     return (
         <section id='conhecimentos'>
-            <div className="bg-white dark:bg-gray-900 border-l-4 pl-4 border-blue-400 rounded-sm container flex flex-col gap-10 px-6 py-12 mx-auto justify-center">
+            <div className="bg-white dark:bg-gray-900 sm:border-l-4 pl-4 sm:border-blue-400 rounded-sm container flex flex-col gap-10 mx-auto px-6  justify-center">
 
                 <Title 
                   title="Conhecimentos"

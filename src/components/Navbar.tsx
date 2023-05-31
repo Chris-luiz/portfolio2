@@ -7,10 +7,10 @@ export const Navbar = () => {
 
     return (
         <nav className="sticky w-screen top-0 bg-white shadow dark:bg-gray-800 h-auto">
-            <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+            <div className="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
                 <div className="flex items-center justify-between">
                     <a href="#sobre-mim">
-                        <h1 className='text-2xl text-gray-700 transition-colors duration-300 transform dark:text-gray-200 md:mx-4 md:my-0'>Christian Luiz</h1>
+                        <h1 className='text-2xl text-gray-700 transition-colors duration-300 transform dark:text-gray-200 lg:mx-4 lg:my-0'>Christian Luiz</h1>
                     </a>
 
                     <div className="flex lg:hidden">
@@ -28,13 +28,13 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}>
-                    <div className="flex flex-col md:flex-row md:mx-6">
-                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#sobre-mim">Sobre Mim</a>
-                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#projetos">Projetos</a>
-                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#experiencia">Experiencia</a>
-                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#conhecimentos">Conhecimentos</a>
-                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#oque-estou-aprendendo">Oque estou aprendendo?</a>
+                <div className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}>
+                    <div className="flex flex-col lg:flex-row lg:mx-6">
+                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#sobre-mim">Sobre Mim</a>
+                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#projetos">Projetos</a>
+                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#experiencia">Experiencia</a>
+                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#conhecimentos">Conhecimentos</a>
+                        <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#oque-estou-aprendendo">Oque estou aprendendo?</a>
                     </div>
                 </div>
             </div>

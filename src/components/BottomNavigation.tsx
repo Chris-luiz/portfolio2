@@ -53,4 +53,3 @@ export const BottomNavigation = () => {
         </ul>
     );
 }
-{/* <ul className="shadow fixed bottom-4 left-1/2 transform-translate-x-1/2  border border-solid p-4 rounded-lg flex gap-10 text-gray-700 justify-center"> */ }

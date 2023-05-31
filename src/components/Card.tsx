@@ -25,7 +25,7 @@ export const Card = ({ nome, img, description, githubLink, langUser, url }: ICar
             </div>
 
             <div className="px-6 py-4">
-                <h1 className="text-xl font-semibold text-gray-800 dark:text-white"></h1>
+                {/* <h1 className="text-xl font-semibold text-gray-800 dark:text-white"></h1> */}
 
                 <p className="py-2 text-gray-700 dark:text-gray-400">{description}</p>
 

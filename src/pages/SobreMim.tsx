@@ -4,8 +4,8 @@ import { PrincipaisTecnologias } from '../components/sobreMim';
 export const SobreMim = () => {
     return (
         <main id="sobre-mim">
-            <div className='w-screen flex justify-center py-12'>
-                <div className="dark:bg-gray-700 sm:w-2/4 container p-4 shadow rounded-lg flex flex-col items-center sm:flex-row gap-4 border dark:border-blue-400">
+            <div className='w-screen flex justify-center p-2'>
+                <div className="dark:bg-gray-700 sm:w-auto lg:w-2/4 container p-4 shadow rounded-lg flex flex-col items-center sm:flex-row gap-4 border dark:border-blue-400">
 
                     <img src="profile.jpg" alt="foto de perfil" className='w-72 h-72 object-cover rounded-lg' />
 
