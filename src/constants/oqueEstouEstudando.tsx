@@ -40,7 +40,7 @@ export const TECNOLOGIAS_ESTUDADAS: ITecnologias[] = [
         text: 'Estou estudando Docker porque atualmente conteinerização é fundamental para se trabalhar em equipes. Estudei principalmente pelos cursos da Udemy do Hora de Codar.',
     },
     {
-        icon: <FaLinux className='text-grey-600 w-16 h-16' />,
+        icon: <FaLinux className='dark:bg-white text-grey-600 w-16 h-16' />,
         nome: 'Linux',
         text: 'É o principal Sistema Operacional que uso para desenvolvimento, por isso me mantenho estudando com livros como : "Linux - A Biblia" e "Shell Linux do Aprendiz ao Administrador.',
     },
