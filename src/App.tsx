@@ -1,14 +1,12 @@
-import { RouterProvider } from "react-router-dom";
-import { routes } from "./routes/AppRoutes";
 import { BottomNavigation, Footer, Navbar } from "./components";
 import { OqueEstouEstudando } from "./pages/OqueEstouEstuando";
-import { Conhecimentos, Experiencias, Projetos } from "./pages";
+import { Conhecimentos, Experiencias, Projetos, SobreMim } from "./pages";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark:bg-gray-900">
       <Navbar />
-      <RouterProvider router={routes}></RouterProvider>
+      <SobreMim />
       <Projetos />
       <Experiencias />
       <Conhecimentos />
