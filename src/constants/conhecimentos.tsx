@@ -45,7 +45,7 @@ export const CONHECIMENTOS: TToolsKnowledgeProps[] = [
         text: `Utilizo para criar mocks de telas e ilustrações.`
     },
     {
-        icon: <FaLinux className="text-gray-800 w-16 h-16" />,
+        icon: <FaLinux className="dark:text-white text-gray-800 w-16 h-16" />,
         lang: "Linux",
         text: `Principal OS que uso para desenvolver.`
     },
