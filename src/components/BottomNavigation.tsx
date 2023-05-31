@@ -1,38 +1,56 @@
+import { ReactNode } from 'react';
 import { FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+
+interface IBottomNavigationIconProps {
+    name: string;
+    icon: ReactNode;
+    href: string;
+    classes: string;
+}
+
+const BottomNavigationIcon = ({ name, icon, href, classes }: IBottomNavigationIconProps) => {
+    return (
+        <li className={classes}>
+            <a target="_blank" href={href} rel="noreferrer" className='flex flex-col items-center text-sm sm:text-base'>
+                {icon}
+                {name}
+            </a>
+        </li>
+    );
+};
 
 export const BottomNavigation = () => {
     return (
-        <ul className="shadow fixed bottom-4 right-4 border border-solid p-4 rounded-lg flex md:flex-col gap-10 text-gray-700 justify-center bg-white">
+        <ul className="bg-white dark:bg-gray-800 shadow fixed bottom-4 p-4 left-1/2   -translate-x-1/2 rounded-lg flex gap-10 text-gray-700 justify-center">
 
-            <li className="hover:text-green-500 hover:fill-green-500">
-                <a target="_blank" href="https://wa.me/5592981226844" rel="noreferrer" className='flex flex-col items-center'>
-                    <FaWhatsapp className=" w-6 h-6" />
-                    Whatsapp
-                </a>
-            </li>
+            <BottomNavigationIcon
+                classes=' dark:text-white hover:text-green-500'
+                href='https://wa.me/5592981226844'
+                icon={<FaWhatsapp className="sm:w-6 sm:h-6" />}
+                name='Whatsapp'
+            />
 
-            <li className="hover:text-red-500 hover:fill-red-500">
-                <a rel="noreferrer" target="_blank" href="https://mail.google.com/mail/?view=cm&to=christian.luiz.de.sousa@gmail.com&body='Olá, podemos conversar?'" className='flex flex-col items-center'>
-                    <FaEnvelope className=" w-6 h-6" />
-                    Gmail
-                </a>
-            </li>
+            <BottomNavigationIcon
+                classes=' dark:text-white hover:text-red-500'
+                href="https://mail.google.com/mail/?view=cm&to=christian.luiz.de.sousa@gmail.com&body='Olá, podemos conversar?'"
+                icon={<FaEnvelope className="sm:w-6 sm:h-6" />}
+                name='Gmail'
+            />
 
-            <li className="hover:text-yellow-500 hover:fill-yellow-500">
-                <a rel="noreferrer" target="_blank" href="https://github.com/Chris-luiz" className='flex flex-col items-center'>
-                    <FaGithub className=" w-6 h-6" />
-                    Github
-                </a>
-            </li>
+            <BottomNavigationIcon
+                classes=' dark:text-white hover:text-yellow-500'
+                href="https://github.com/Chris-luiz"
+                icon={<FaGithub className="sm:w-6 sm:h-6" />}
+                name='Github'
+            />
 
-            <li className="hover:text-blue-500 hover:fill-blue-500">
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/christian-luiz-dev/" className='flex flex-col items-center'>
-                    <FaLinkedin className=" w-6 h-6" />
-                    Linkedin
-                </a>
-            </li>
+            <BottomNavigationIcon
+                classes=' dark:text-white hover:text-blue-500'
+                href="https://www.linkedin.com/in/christian-luiz-dev/"
+                icon={<FaLinkedin className="sm:w-6 sm:h-6" />}
+                name='Linkedin'
+            />
         </ul>
     );
 }
-
-{/* <ul className="shadow fixed bottom-4 left-1/2 transform -translate-x-1/2  border border-solid p-4 rounded-lg flex gap-10 text-gray-700 justify-center"> */}
+{/* <ul className="shadow fixed bottom-4 left-1/2 transform-translate-x-1/2  border border-solid p-4 rounded-lg flex gap-10 text-gray-700 justify-center"> */ }
