@@ -2,7 +2,7 @@ import { TCarousel } from "../types";
 
 export const EXPERIENCIAS: TCarousel[] = [
     {
-        cargo: 'Estagiario em Desenvolvimento',
+        cargo: 'Estágio em Desenvolvimento',
         nomeEmpresa: "Secretaria Municipal de Educação de Manaus (Semed-AM)",
         img: "jobs_images/semed.jpg",
         periodo: "01/2022 - 06/2022",
@@ -11,7 +11,7 @@ export const EXPERIENCIAS: TCarousel[] = [
         tecnologiasUtilizadas: ["HTML", "CSS", "JavaScript", "PHP", "Yii2 framework", "Banco de Dados Oracle SQL", "GIT"]
     },
     {
-        cargo: 'Estagiario em T.I',
+        cargo: 'Estágio em T.I',
         nomeEmpresa: "Superintendencia da Zona Franca de Manaus (SUFRAMA)",
         img: "jobs_images/suframa.jpg",
         periodo: "01/2022 - 06/2022",
