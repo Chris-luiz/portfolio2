@@ -8,9 +8,8 @@ export const Stepper = ({ selected, onSelect }: IStepperProps) => {
 
     const isSelected = (value: number): boolean => selected === value ? true : false;
     
-
     return (
-        <ol className="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
+        <ol className="hidden sm:block relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400 max-h-32">
             <li className="mb-10 ml-6">
                 <label htmlFor="default-radio-1" className={`hover:cursor-pointer font-medium leading-tight ${isSelected(0) && 'text-blue-500'}`}>
                     <div className="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
