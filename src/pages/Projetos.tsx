@@ -1,11 +1,16 @@
-import { Card } from "../components"
+import { Card, Title } from "../components"
 import { PROJETOS } from "../constants/projetos"
 
 export const Projetos = () => {
     return (
         <section id="projetos">
-            <div className="flex justify-center flex-col px-12 py-12">
-                <h1 className="text-2xl text-gray-700 text-center m-20">Projetos</h1>
+            <div className="flex justify-center flex-col px-12">
+                <Title 
+                  title="Projetos" 
+                  subTitle="Estes são meus principais projetos no GitHub"
+                  subTitleClasses="text-center"
+                  titleClasses="text-center"
+                />
                 <div className="flex gap-4 flex-wrap justify-center">
                     {PROJETOS.map(project => (
                         <Card
