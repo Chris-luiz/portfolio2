@@ -6,7 +6,7 @@ export const Navbar = () => {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="fixed w-full top-0 bg-white shadow dark:bg-gray-800">
+        <nav className="sticky w-screen top-0 bg-white shadow dark:bg-gray-800 h-auto">
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <a href="#sobre-mim">
