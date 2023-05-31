@@ -1,5 +1,5 @@
-import { Card, Title } from "../components"
-import { PROJETOS } from "../constants/projetos"
+import { Title } from "../components"
+import { ProjetosListagem } from "../components/projetos/ProjetosListagem"
 
 export const Projetos = () => {
     return (
@@ -11,19 +11,7 @@ export const Projetos = () => {
                   subTitleClasses="text-center"
                   titleClasses="text-center"
                 />
-                <div className="flex gap-4 flex-wrap justify-center">
-                    {PROJETOS.map(project => (
-                        <Card
-                            key={project.nome}
-                            nome={project.nome}
-                            img={project.img}
-                            description={project.description}
-                            githubLink={project.githubLink}
-                            langUser={project.langUser}
-                            url={project.url}
-                        />
-                    ))}
-                </div>
+                <ProjetosListagem />
             </div>
         </section>
     )

@@ -3,7 +3,7 @@ export * from './Navbar';
 export * from './Footer';
 export * from './experiencias/Carousel';
 export * from './Stepper';
-export * from './Card';
+export * from './projetos/Card';
 export * from './OqueEstouEstudando/ListaOqueEstouEstudandoItem';
 export * from './Conhecimentos/ConhecimentoItem';
 export * from './OqueEstouEstudando/ListaOqueEstouEstudando';
