@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Stepper } from "./Stepper";
 import { EXPERIENCIAS } from "../constants/experiencias";
+import { Title } from "./Title";
 
 export const Carousel = () => {
 
@@ -23,19 +24,24 @@ export const Carousel = () => {
     };
 
     return (
-        <div className="bg-white dark:bg-gray-900 m-20">
-            <h1 className="text-center text-3xl font-mono text-blue-900 ">Experiências</h1>
-            <p className="text-center font-medium text-blue-500 dark:text-blue-400">Onde realizei projetos, tanto contratado como estágio</p>
+        <div className="bg-white dark:bg-gray-900 mb-8">
 
-            <div className="container px-6 mx-auto">
-                <div className="lg:-mx-6 lg:flex lg:items-center gap-5">
+            <Title
+                title="Experiências"
+                subTitle="Onde realizei projetos, tanto contratado como estágio"
+                titleClasses="text-center"
+                subTitleClasses="text-center"
+            />
+
+            <div className="px-6">
+                <div className="sm:flex gap-4">
 
                     <Stepper selected={selected} onSelect={setSelected} />
 
-                    <div className="flex flex-col justify-center">
-                        <img className="object-cover object-center max-w- max-h-md lg:w-fit w-full rounded-lg lg:h-[28rem]" src={EXPERIENCIAS[selected].img} alt="" />
+                    <div className="flex flex-col">
+                        <img className="object-cover object-center rounded-lg lg:h-[28rem]" src={EXPERIENCIAS[selected].img} alt="Imagem do trabalho" />
 
-                        <div className="flex items-center justify-between mt-4 lg:justify-start">
+                        <div className="flex justify-between mt-4 lg:justify-start">
                             <button onClick={previous} title="left arrow" className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -50,28 +56,27 @@ export const Carousel = () => {
                         </div>
                     </div>
 
-                    <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
-
-                        <p className="text-2xl font-semibold text-blue-500 lg:w-96">{EXPERIENCIAS[selected].nomeEmpresa}</p>
-
-                        <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
+                    <div className="mt-8 sm:mt-0">
+                        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">
                             {EXPERIENCIAS[selected].cargo}
                         </h1>
+                        <p className="text-1xl font-semibold text-blue-400 ">{EXPERIENCIAS[selected].nomeEmpresa}</p>
 
                         <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400 ">
                             {EXPERIENCIAS[selected].responsabilidades}
                         </p>
 
-                        <h3 className="mt-6 text-lg font-medium text-blue-500">Periodo: </h3>
+                        <h3 className="mt-6 text-lg font-medium dark:text-white text-blue-500">Periodo: </h3>
                         <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400 inline">
                             {EXPERIENCIAS[selected].periodo}
                         </p>
 
-                        <h3 className="mt-6 text-lg font-medium text-blue-500">Tecnologias Utilizadas:</h3>
-                        {EXPERIENCIAS[selected].tecnologiasUtilizadas.map(tecnologia => (
-                            <li key={tecnologia} className="text-gray-600 dark:text-gray-300">{tecnologia}</li>
-                        ))}
-
+                        <h3 className="mt-6 text-lg font-medium dark:text-white text-blue-500">Tecnologias Utilizadas:</h3>
+                        <ul className="list-inside">
+                            {EXPERIENCIAS[selected].tecnologiasUtilizadas.map(tecnologia => (
+                                <li key={tecnologia} className="text-gray-600 dark:text-gray-300 list-disc">{tecnologia}</li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </div>
