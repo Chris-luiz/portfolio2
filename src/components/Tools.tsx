@@ -3,12 +3,15 @@ import { ToolsProps } from "../types"
 
 export const Tools = ({ toolName, toolIcon, text }: ToolsProps) => {
     return (
-        <div className='flex items-center xs:flex-col sm:flex-row gap-4'>
+        <div className='flex flex-col items-center gap-2 sm:flex-row'>
             <dt>{toolIcon}
-                <p className='text-center font-thin'>{toolName}</p>
+                <p className='text-center font-medium dark:text-white'>{toolName}</p>
             </dt>
-            <span><MdArrowForwardIos className='xs:hidden sm:block text-slate-500 w-4 h-4' /></span>
-            <dd className='font-light text-sm'>{text}</dd>
+            <span>
+                <MdArrowForwardIos className='hidden sm:block text-slate-500 w-4 h-4' />
+            </span>
+            <dd className='text-justify sm:text-left text-sm sm:text-base text-gray-500 dark:text-gray-400'>{text}</dd>
         </div>
+
     )
 }
