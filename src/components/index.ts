@@ -6,3 +6,5 @@ export * from './Stepper';
 export * from './Card';
 export * from './Tools';
 export * from './ToolsKnowledge';
+export * from './ListaOqueEstouEstudando';
+export * from './Title';
