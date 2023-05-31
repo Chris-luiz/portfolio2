@@ -1,6 +1,6 @@
-import { TToolsKnowledgeProps } from "../types";
+import { TConhecimentoItemProps } from "../../types";
 
-export const ToolsKnowledge = ({ icon, lang, text }: TToolsKnowledgeProps) => {
+export const ConhecimentoItem = ({ icon, lang, text }: TConhecimentoItemProps) => {
     return (
         <div className="flex gap-4">
             {icon}

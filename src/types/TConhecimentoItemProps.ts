@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export type TToolsKnowledgeProps = {
+export type TConhecimentoItemProps = {
     icon: ReactNode;
     lang: string;
     text: string

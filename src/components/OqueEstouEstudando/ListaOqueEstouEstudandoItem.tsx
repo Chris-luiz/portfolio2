@@ -1,7 +1,7 @@
 import { MdArrowForwardIos } from "react-icons/md"
-import { ToolsProps } from "../types"
+import { ToolsProps } from "../../types"
 
-export const Tools = ({ toolName, toolIcon, text }: ToolsProps) => {
+export const ListaOqueEstouEstudandoItem = ({ toolName, toolIcon, text }: ToolsProps) => {
     return (
         <div className='flex flex-col items-center gap-2 sm:flex-row'>
             <dt>{toolIcon}

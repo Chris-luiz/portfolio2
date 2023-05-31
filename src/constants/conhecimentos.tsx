@@ -1,9 +1,9 @@
-import { TToolsKnowledgeProps } from "../types"
+import { TConhecimentoItemProps } from "../types"
 import { FaDocker, FaLaravel, FaLinux, FaPhp, FaSass } from "react-icons/fa"
 import { DiIllustrator, DiPhotoshop, DiYii } from "react-icons/di"
 import { SiCypress, SiMysql, SiStyledcomponents } from "react-icons/si"
 
-export const CONHECIMENTOS: TToolsKnowledgeProps[] = [
+export const CONHECIMENTOS: TConhecimentoItemProps[] = [
     {
         icon: <FaPhp className="text-blue-800 w-16 h-16" />,
         lang: "PHP",

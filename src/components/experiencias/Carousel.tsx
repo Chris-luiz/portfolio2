@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Stepper } from "./Stepper";
-import { EXPERIENCIAS } from "../constants/experiencias";
-import { Title } from "./Title";
+import { Stepper } from "../Stepper";
+import { EXPERIENCIAS } from "../../constants/experiencias";
+import { Title } from "../Title";
 
 export const Carousel = () => {
 
