@@ -8,5 +8,12 @@ export const PROJETOS: ICardProps[] = [
         url: "https://chris-luiz.github.io/click-and-enjoy/",
         githubLink: "https://github.com/Chris-luiz/click-and-enjoy",
         langUser: ["React, ", "Typescript"],
+    },
+    {
+        nome: "Costs",
+        img: "projects_images/Screenshot from 2023-06-28 13-15-47.png",
+        description: "Projeto crud de servicos com front-end e back-end conteinerizado em docker.",
+        githubLink: "https://github.com/Chris-luiz/costs",
+        langUser: ["React, ", "Typescript, NodeJs, docker, mysql"],
     }
 ]

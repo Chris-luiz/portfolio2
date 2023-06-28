@@ -25,11 +25,12 @@ export const Card = ({ nome, img, description, githubLink, langUser, url }: ICar
                     <FaGithub className="h-6 w-6" />
                     <a href={githubLink} target='_blank' rel='noreferrer' className="hover:text-blue-400 px-2 text-sm">{githubLink}</a>
                 </div>
-
-                <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
-                    <TbWorld className="h-6 w-6" />
-                    <a href={url} target='_blank' rel='noreferrer' className="hover:text-blue-400 px-2 text-sm">{url}</a>
-                </div>
+                {url &&
+                    <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
+                        <TbWorld className="h-6 w-6" />
+                        <a href={url} target='_blank' rel='noreferrer' className="hover:text-blue-400 px-2 text-sm">{url}</a>
+                    </div>
+                }
 
                 <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
                     <BsCodeSlash className="h-6 w-6" />
