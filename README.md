@@ -9,6 +9,8 @@ Este repositorio foi desenvolvido utilizando React com typescript e tailwind.
 
 
 ![alt text](portfolio/../public/prints/Screenshot%20from%202023-06-28%2014-26-05.png)
+--------------------------------/
 ![alt text](portfolio/../public/prints/Screenshot%20from%202023-06-28%2014-26-10.png)
+--------------------------------/
 ![alt text](portfolio/../public/prints/Screenshot%20from%202023-06-28%2014-26-24.png)
 
